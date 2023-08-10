@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: jstore_development
+  database: jstore_rails_development
   username: postgres
 
 
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: jstore_test
+  database: jstore_rails_test
   username: postgres
 
 # As with config/credentials.yml, you never want to store sensitive information,
