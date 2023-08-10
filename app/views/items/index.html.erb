@@ -1,6 +1,5 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Items</h1>
+<% content_for :title, "Items" %>
 
 <div id="items">
   <% @items.each do |item| %>
@@ -9,10 +8,11 @@
 
 
       <embed src=<%= item.get_url %> width="500" height="375">
-      <%= item.item %>
+      <p>
+      <%= item.title %> - 
+      <%= item.notes %>
+      </p>
 
     </p>
   <% end %>
 </div>
-
-<%= link_to "New item", new_item_path %>

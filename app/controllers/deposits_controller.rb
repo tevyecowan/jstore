@@ -1,6 +1,7 @@
 class DepositsController < ApplicationController
   before_action :set_deposit, only: %i[ show edit update destroy ]
 
+
   # GET /deposits or /deposits.json
   def index
     @deposits = Deposit.all
@@ -22,7 +23,7 @@ class DepositsController < ApplicationController
   # POST /deposits or /deposits.json
   def create
     @deposit = Deposit.new(deposit_params)
-
+    
     respond_to do |format|
       if @deposit.save
         format.html { redirect_to deposit_url(@deposit), notice: "Deposit was successfully created." }
