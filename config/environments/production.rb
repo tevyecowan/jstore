@@ -5,6 +5,9 @@ Rails.application.configure do
   # setting active storage service to amazon
   config.active_storage.service = :amazon
 
+  # NOT SURE IF THIS WILL WORK
+  config.action_mailer.default_url_options = { host: 'https://jstore-rails-c3a4c1568d5a.herokuapp.com/' }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

@@ -15,6 +15,17 @@ gem "sprockets-rails"
 # postgres
 gem "pg"
 
+# user
+gem "devise", "~> 4.9"
+
+# env secrets
+gem 'dotenv-rails'
+
+# omniauth
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection', '~> 0.1'
+
 # using aws for storage
 gem "aws-sdk-s3", require: false
 
@@ -76,3 +87,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
