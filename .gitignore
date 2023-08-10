@@ -36,3 +36,6 @@
 
 # dont commit local uploads
 /public/uploads
+
+#env file
+.env
